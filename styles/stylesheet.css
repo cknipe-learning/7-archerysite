@@ -204,3 +204,7 @@ footer {
 .person-cert-value {
   margin-top: 0.3em;
 }
+
+video {
+  margin: 0 2em 1em 2em;
+}
