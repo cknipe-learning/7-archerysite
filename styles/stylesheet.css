@@ -1,0 +1,206 @@
+/*
+  Colors:
+  Light blue: rgb(3, 163, 223)
+  Dark blue: rgb(27, 68, 127)
+  Yellow: rgb(236, 183, 34)
+  Grey: rgb(68, 68, 68)
+*/
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+}
+
+/* Header */
+
+header {
+  padding: 1em;
+  background: rgb(3, 163, 223);
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 4em 4em;
+}
+
+header img {
+  height: 100%;
+  border: 1em;
+  grid-column: 1;
+}
+
+header nav {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  display: grid;
+}
+
+.nav-button {
+  color: white;
+  align-self: center;
+}
+
+.nav-button:nth-child(1) {
+  grid-column-start: 1;
+}
+
+.nav-button:nth-child(2) {
+  grid-column-start: 2;
+}
+
+.nav-button:nth-child(3) {
+  grid-column-start: 3;
+}
+
+.home-header-img {
+  width: 100%;
+}
+
+/* Body */
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+/* Footer */
+/* TODO-now: How to overlay the text on the footer img? */
+footer {
+  position: relative;
+  min-width: 40em;
+}
+
+.footer-background {
+  width: 100%;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  padding: 2em;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+ /* size of each row depends on largest item in the row */
+  grid-template-rows: max-content;
+  grid-template-columns: auto auto auto;
+}
+
+.footer-overlay img {
+  width: 10em;
+  grid-column: 1;
+}
+
+.footer-overlay .text {
+  grid-column: 2;
+}
+
+/* Page specific - Home */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimonial-block {
+  flex-basis: 20em;
+  flex-grow: 0;
+  margin: 2em;
+  /* Question: If I do this, the right margin extends to the right side of the page. Why?
+  max-width: 20em; */
+}
+
+.testimonial-quote {
+  font-size: 30px;
+  color: rgb(3, 163, 223);
+}
+
+.testimonial-speaker {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(3, 163, 223);
+}
+
+.check-out {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.check-out a {
+  background: rgb(27, 68, 127);
+  flex-basis: 5em;
+  min-height: 5em;
+  min-width: 5em;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+  color: white;
+  font-size: 24px;
+}
+.check-out a:hover {
+  color: rgb(236, 183, 34);
+  text-decoration: underline;
+}
+
+
+/* Page specific - Services */
+.class-type {
+  margin: 1em;
+}
+.lesson-type {
+  margin: 1em;
+}
+
+/* Page specific - About */
+.people h3 {
+  margin: 2em;
+}
+
+.person-block {
+  background: rgb(27, 68, 127);
+  margin: 2em;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.person-block img {
+  margin: 2em;
+}
+
+.person-block .text {
+  margin: 1em 2em 1em 0;
+  color: white;
+}
+
+.person-block .text .line {
+  border-top: 1px solid rgb(236, 183, 34);
+}
+
+.person-cert-header {
+  color: rgb(236, 183, 34);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.person-cert-value {
+  margin-top: 0.3em;
+}

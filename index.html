@@ -3,53 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>Straight to the Point Archery</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
 
   <body>
     <header>
-      <img src="design-elements/archeryAcademy-logo-color.png" alt="Archery Academy logo">
-      <nav>
-        <a href="index.html" class="nav-button">Home</a>
-        <a href="services.html" class="nav-button">Services & Schedule</a>
-        <a href="about.html" class="nav-button">About Us</a>
-      </nav>
+      <div class="header-content">
+        <img src="design-elements/archeryAcademy-logo-white.png" alt="Archery Academy logo">
+        <nav>
+          <a href="index.html" class="nav-button">Home</a>
+          <a href="services.html" class="nav-button">Services & Schedule</a>
+          <a href="about.html" class="nav-button">About Us</a>
+        </nav>
+      </div>
     </header>
 
     <section>
       <!-- TODO (css): Resize image to fit width -->
       <h1>Straight to the Point Archery Academy</h1>
-      <img src="design-elements/hunger-games.jpg" alt="Katniss Everdeen, from The Hunger Games movie, aiming a bow and arrow">
+      <img class="home-header-img" src="design-elements/hunger-games.jpg" alt="Katniss Everdeen, from The Hunger Games movie, aiming a bow and arrow">
     </section>
 
     <section>
       <h2>Hear from our students</h2>
-      <div class="testimonial-block">
-        <p class="testimonial-quote">"Sample testimonial!"</p>
-        <p class="testimonial-speaker">-Sample person</p>
-      </div>
+      <div class="testimonials">
+        <div class="testimonial-block">
+          <p class="testimonial-quote">"Sample testimonial!"</p>
+          <p class="testimonial-speaker">- Sample person</p>
+        </div>
 
-      <div class="testimonial-block">
-        <p class="testimonial-quote">"Another sample testimonial! I love this place because something something"</p>
-        <p class="testimonial-speaker">-Another person</p>
+        <div class="testimonial-block">
+          <p class="testimonial-quote">"Another sample testimonial! I love this place because something something"</p>
+          <p class="testimonial-speaker">- Another person</p>
+        </div>
       </div>
     </section>
 
     <section>
       <h2>Check out</h2>
-      <a href="services.html#classes">Our Classes</a>
-      <a href="services.html#private-lessons">Our Private Lessons</a>
-      <a href="about.html">Who we are</a>
+      <div class="check-out">
+        <a href="services.html#classes">Our Classes</a>
+        <a href="services.html#private-lessons">Our Private Lessons</a>
+        <a href="about.html">Who we are</a>
+      </div>
     </section>
 
     <footer>
-      <img src="design-elements/footerImage.jpg" alt="blue-tinted photo of the ends of archery arrows">
-      <img src="design-elements/archeryAcademy-logo-white.png" alt="">
-      <p>Straight to the Point Archery
-        <br>528 Nock Point Ln
-        <br>Tacoma, WA 98412
-      </p>
-      <p>archery-education@example.com</p>
-      <p>(253)555-1010</p>
+      <img class="footer-background" src="design-elements/footerImage.jpg" alt="blue-tinted photo of the ends of archery arrows">
+      <div class="footer-overlay">
+        <img src="design-elements/archeryAcademy-logo-white.png" alt="">
+        <div class="text">
+          <p>Straight to the Point Archery
+            <br>528 Nock Point Ln
+            <br>Tacoma, WA 98412
+          </p>
+          <p>archery-education@example.com</p>
+          <p>(253)555-1010</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
